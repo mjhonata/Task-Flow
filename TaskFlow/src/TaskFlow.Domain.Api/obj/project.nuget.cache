@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "SWgpzqSM9NI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain.Api\\TaskFlow.Domain.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mjhonata\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.11\\microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
+    "C:\\Users\\mjhonata\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
