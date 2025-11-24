@@ -9,4 +9,9 @@ public abstract class Entity : IEquatable<Entity>
         //Sempre gera um novo Guid ao criar a entidade
         Id = Guid.NewGuid();
     }
+
+    public bool Equals(Entity? other)
+    {
+        return Id == other?.Id;
+    }
 }

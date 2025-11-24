@@ -1,26 +1,45 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "TaskFlow.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/TaskFlow.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaskFlow.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "TaskFlow.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TaskFlow.Domain/TaskFlow.Domain.csproj",
+      "msbuildProject": "../TaskFlow.Domain/TaskFlow.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "TaskFlow.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\mjhonata\\.nuget\\packages\\": {}
+    "C:\\Users\\Matheus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain.Infra\\TaskFlow.Domain.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain.Infra\\TaskFlow.Domain.Infra.csproj",
       "projectName": "TaskFlow.Domain.Infra",
-      "projectPath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain.Infra\\TaskFlow.Domain.Infra.csproj",
-      "packagesPath": "C:\\Users\\mjhonata\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain.Infra\\obj\\",
+      "projectPath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain.Infra\\TaskFlow.Domain.Infra.csproj",
+      "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mjhonata\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -31,7 +50,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj": {
+              "projectPath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
