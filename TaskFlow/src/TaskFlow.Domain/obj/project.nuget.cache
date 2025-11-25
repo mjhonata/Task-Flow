@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bM5Q92mENl0=",
+  "dgSpecHash": "2cptFtt8skk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mjhonata\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
   "logs": []
 }
