@@ -30,23 +30,23 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "flunt >= 2.0.5"
+      "Flunt >= 2.0.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mjhonata\\.nuget\\packages\\": {}
+    "C:\\Users\\Matheus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj",
       "projectName": "TaskFlow.Domain",
-      "projectPath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj",
-      "packagesPath": "C:\\Users\\mjhonata\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain\\obj\\",
+      "projectPath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj",
+      "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mjhonata\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -76,7 +76,7 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
-          "flunt": {
+          "Flunt": {
             "target": "Package",
             "version": "[2.0.5, )"
           }

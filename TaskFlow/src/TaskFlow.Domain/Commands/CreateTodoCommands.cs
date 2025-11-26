@@ -1,15 +1,17 @@
 using System.ComponentModel.DataAnnotations;
+using Flunt.Notifications;
+using Flunt.Validations;
 using TaskFlow.Domain.Commands.Contracts;
 
 namespace TaskFlow.Domain.Commands;
 
-public class CreateTodoCommand : ICommand
+public class CreateTodoCommand : Notifiable<Notification>, ICommand
 {
     #region Propi
     public string Title { get; set; }
     public string User { get; set; }
     public DateTime Date { get; set; }
-   #endregion
+    #endregion
     #region Constructors
     public CreateTodoCommand(string title, string user, DateTime date)
     {
@@ -17,15 +19,20 @@ public class CreateTodoCommand : ICommand
         User = user;
         Date = date;
     }
-    public CreateTodoCommand() {}
+    public CreateTodoCommand() { }
     #endregion
-    public bool Validate()
+    public void Validate()
     {
-        throw new NotImplementedException();
+        AddNotifications(new Contract<CreateTodoCommand>()
+            .Requires()
+            .IsNotNullOrEmpty(Title, "Title", "O título não pode ser vazio")
+            .IsNotNullOrEmpty(User, "User", "O usuário não pode ser vazio")
+            .IsGreaterThan(Date, DateTime.Now.AddDays(-1), "Date", "A data não pode ser menor que a data atual")
+        );
     }
-
     public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
     {
-        throw new NotImplementedException();
+        Validate();
+        return null;
     }
 }
