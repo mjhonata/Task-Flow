@@ -4,5 +4,5 @@ namespace TaskFlow.Domain.Commands.Contracts;
 
 public interface ICommand : IValidatableObject
 {
-    bool Validate();
+    void Validate();
 }
