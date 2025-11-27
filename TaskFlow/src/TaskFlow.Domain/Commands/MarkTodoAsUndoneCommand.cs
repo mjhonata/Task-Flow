@@ -2,19 +2,19 @@ using System.ComponentModel.DataAnnotations;
 using Flunt.Notifications;
 using Flunt.Validations;
 using TaskFlow.Domain.Commands.Contracts;
-
+//essa classe representa o comando para marcar uma tarefa como não concluída (undone), é o mesmo código do MarkTodoAsDoneCommand, porém esse sistema pode escalar eai é interessando duas classes para manter consistência. 
 namespace TaskFlow.Domain.Commands;
 
-public class MarkTodoAsDoneCommand : Notifiable<Notification>, ICommand
+public class MarkTodoAsUndoneCommand : Notifiable<Notification>, ICommand
 {
     public Guid Id { get; set; }
     public string User { get; set; }
-    public MarkTodoAsDoneCommand(Guid id, string user)
+    public MarkTodoAsUndoneCommand(Guid id, string user)
     {
         Id = id;
         User = user;
     }
-    public MarkTodoAsDoneCommand(){}
+    public MarkTodoAsUndoneCommand(){}
     public void Validate()
     {
         AddNotifications(new Contract<Notification>()
