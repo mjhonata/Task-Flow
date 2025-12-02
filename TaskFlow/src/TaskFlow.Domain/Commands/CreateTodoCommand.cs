@@ -9,13 +9,15 @@ public class CreateTodoCommand : Notifiable<Notification>, ICommand
 {
     #region Propi
     public string Title { get; set; }
+    public string Description { get; set; }
     public string User { get; set; }
     public DateTime Date { get; set; }
     #endregion
     #region Constructors
-    public CreateTodoCommand(string title, string user, DateTime date)
+    public CreateTodoCommand(string title, string description, string user, DateTime date)
     {
         Title = title;
+        Description = description;
         User = user;
         Date = date;
     }
