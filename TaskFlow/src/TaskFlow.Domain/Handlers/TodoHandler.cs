@@ -20,7 +20,7 @@ public class TodoHandler : Notifiable<Notification>, IHandler<CreateTodoCommand>
         if (command.IsValid == false)
             return new GenericCommandResult(false, "Por favor, corrija os campos abaixo", command.Notifications);
 
-        var todo = new TodoItem(command.Title, command.Description, false, command.Date, command.User);
+        var todo = new TodoItem(command.Title, command.Description, command.Date, command.User);
 
         _repository.Create(todo.Title, todo.Description);
         return new GenericCommandResult(true, "Tarefa criada com sucesso", todo);

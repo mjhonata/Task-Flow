@@ -10,11 +10,11 @@ public class TodoItem : Entity
     public string User { get; private set; }
     #endregion
     #region Constructors
-    public TodoItem(string title, string description, bool done, DateTime date, string user)
+    public TodoItem(string title, string description, DateTime date, string user)
     {
         Title = title;
         Description = description;
-        done = false;
+        Done = false;
         Date = date;
         User = user;
     }
