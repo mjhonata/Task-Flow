@@ -14,7 +14,7 @@ public class TodoItem : Entity
     {
         Title = title;
         Description = description;
-        Done = false;
+        done = false;
         Date = date;
         User = user;
     }
