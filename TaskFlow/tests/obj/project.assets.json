@@ -8,6 +8,15 @@
           "build/netstandard2.0/coverlet.collector.targets": {}
         }
       },
+      "Flunt/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/17.12.0": {
         "type": "package",
         "compile": {
@@ -411,6 +420,19 @@
         "build": {
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "TaskFlow.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Flunt": "2.0.5"
+        },
+        "compile": {
+          "bin/placeholder/TaskFlow.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaskFlow.Domain.dll": {}
+        }
       }
     }
   },
@@ -483,6 +505,19 @@
         "coverlet-icon.png",
         "coverlet.collector.6.0.2.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "Flunt/2.0.5": {
+      "sha512": "CMgq8FUYjkHzyZT3PhkUwZyy79mudON+EL4b0SAT7BfIOJ2CNypwnbdA0cPHAM2CYQfO2L8ubNJCiBHQOIv2pA==",
+      "type": "package",
+      "path": "flunt/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.2.0.5.nupkg.sha512",
+        "flunt.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Flunt.dll"
       ]
     },
     "Microsoft.CodeCoverage/17.12.0": {
@@ -932,30 +967,36 @@
         "xunit.runner.visualstudio.2.8.2.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "TaskFlow.Domain/1.0.0": {
+      "type": "project",
+      "path": "../src/TaskFlow.Domain/TaskFlow.Domain.csproj",
+      "msbuildProject": "../src/TaskFlow.Domain/TaskFlow.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.NET.Test.Sdk >= 17.12.0",
+      "TaskFlow.Domain >= 1.0.0",
       "coverlet.collector >= 6.0.2",
       "xunit >= 2.9.2",
       "xunit.runner.visualstudio >= 2.8.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mjhonata\\.nuget\\packages\\": {}
+    "C:\\Users\\Matheus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\tests\\tests.csproj",
+      "projectUniqueName": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\tests\\tests.csproj",
       "projectName": "tests",
-      "projectPath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\tests\\tests.csproj",
-      "packagesPath": "C:\\Users\\mjhonata\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\tests\\obj\\",
+      "projectPath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\tests\\tests.csproj",
+      "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mjhonata\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -966,7 +1007,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj": {
+              "projectPath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
