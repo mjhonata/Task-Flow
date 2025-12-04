@@ -22,7 +22,7 @@ public class TodoHandler : Notifiable<Notification>, IHandler<CreateTodoCommand>
 
         var todo = new TodoItem(command.Title, command.Description, command.Date, command.User);
 
-        _repository.Create(todo.Title, todo.Description);
+        _repository.Create(todo);
         return new GenericCommandResult(true, "Tarefa criada com sucesso", todo);
     }
 }

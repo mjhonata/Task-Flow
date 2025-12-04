@@ -1,9 +1,11 @@
+using TaskFlow.Domain.Entities;
+
 namespace TaskFlow.Domain.Repositories;
 
 public interface ITodoRepository
 {
-    void Create(string title, string description);
-    void Update(int id, string title, string description);
+    void Create(TodoItem todo);
+    void Update(TodoItem todo);
     void DeleteTodo(int id);
 
 }
