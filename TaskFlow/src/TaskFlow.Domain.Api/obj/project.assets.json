@@ -135,19 +135,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Matheus\\.nuget\\packages\\": {}
+    "C:\\Users\\mjhonata\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain.Api\\TaskFlow.Domain.Api.csproj",
+      "projectUniqueName": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain.Api\\TaskFlow.Domain.Api.csproj",
       "projectName": "TaskFlow.Domain.Api",
-      "projectPath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain.Api\\TaskFlow.Domain.Api.csproj",
-      "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain.Api\\obj\\",
+      "projectPath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain.Api\\TaskFlow.Domain.Api.csproj",
+      "packagesPath": "C:\\Users\\mjhonata\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\mjhonata\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -159,11 +159,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain.Infra\\TaskFlow.Domain.Infra.csproj": {
-              "projectPath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain.Infra\\TaskFlow.Domain.Infra.csproj"
+            "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain.Infra\\TaskFlow.Domain.Infra.csproj": {
+              "projectPath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain.Infra\\TaskFlow.Domain.Infra.csproj"
             },
-            "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj": {
-              "projectPath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj"
+            "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj": {
+              "projectPath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain\\TaskFlow.Domain.csproj"
             }
           }
         }
