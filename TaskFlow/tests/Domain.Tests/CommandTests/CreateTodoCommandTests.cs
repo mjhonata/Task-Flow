@@ -2,7 +2,7 @@ using TaskFlow.Domain.Entities;
 using TaskFlow.Domain.Commands;
 using System.Reflection;
 
-namespace TaskFlow.Tests.Domain.Tests;
+namespace TaskFlow.Tests.Domain.Tests.CommandTests;
 
 public class CreateTodoCommandTests
 {
