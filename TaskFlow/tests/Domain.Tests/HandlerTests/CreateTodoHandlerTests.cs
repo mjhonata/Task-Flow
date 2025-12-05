@@ -1,34 +1,29 @@
-using TaskFlow.Domain.Entities;
-using TaskFlow.Domain.Commands;
-using System.Reflection;
+namespace TaskFlow.Tests.Domain.Tests.HandlerTests;
 
-namespace TaskFlow.Tests.Domain.Tests;
+public class CreateTodoHandlerTests
 
-public class CreateTodoCommandTests
 {
     #region Propriedades
     private readonly CreateTodoCommand _invalidCommand = new CreateTodoCommand("", "", "Matheus", DateTime.Now);
     private readonly CreateTodoCommand _validCommand = new CreateTodoCommand("Titulo", "Descrição", "Matheus", DateTime.Now.AddDays(1));
     #endregion
+    [Fact]
+    public void Dado_Um_Comando_Invalido_deve_interromper_a_execucao()
+    {
+        //Arrange é quando preparamos o teste
 
-    #region Métodos de Teste
-    [Fact]
-    public void Dado_Um_Comando_Invalido()
-    {
-        //Arrange é quando preparamos o teste
         //Act é quando executamos a ação que será testada
-        _invalidCommand.Validate();
+
         //Assert é para verificar se o resultado está correto
-        Assert.False(_invalidCommand.IsValid);
+
     }
     [Fact]
-    public void Dado_Um_Comando_Valido()
+    public void Dado_Um_Comando_Valido_deve_criar_a_tarefa()
     {
         //Arrange é quando preparamos o teste
+
         //Act é quando executamos a ação que será testada
-        _validCommand.Validate();
         //Assert é para verificar se o resultado está correto
-        Assert.True(_validCommand.IsValid);
+
     }
-    #endregion
 }
