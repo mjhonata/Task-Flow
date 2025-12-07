@@ -9,12 +9,15 @@ public class UpdateTodoCommand : Notifiable<Notification>, ICommand
 {
     public Guid Id { get; set; }
     public string Title { get; set; }
+    public string? Description { get; set; }
     public string User { get; set; }
 
-    public UpdateTodoCommand(Guid id, string title, string user)
+
+    public UpdateTodoCommand(Guid id, string title, string? description, string user)
     {
         Id = id;
         Title = title;
+        Description = description;
         User = user;
     }
 
