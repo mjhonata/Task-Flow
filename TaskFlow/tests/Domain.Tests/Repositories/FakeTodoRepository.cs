@@ -16,4 +16,9 @@ public class FakeTodoRepository : ITodoRepository
     {
         // Simula a exclusão de uma tarefa (não faz nada)
     }
+    public TodoItem GetById(int id, string user)
+    {
+        // Simula a recuperação de uma tarefa por ID e usuário
+        return new TodoItem("Título de Teste", "Descrição de Teste", DateTime.Now, user);
+    }
 }
