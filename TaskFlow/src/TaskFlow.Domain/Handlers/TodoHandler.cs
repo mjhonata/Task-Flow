@@ -7,7 +7,7 @@ using TaskFlow.Domain.Repositories;
 
 namespace TaskFlow.Domain.Handlers;
 //notifiable é para validar os dados, temos os metodos valid, notifications, etc
-public class TodoHandler : Notifiable<Notification>, IHandler<CreateTodoCommand>, IHandler<UpdateTodoCommand>
+public class TodoHandler : Notifiable<Notification>, IHandler<CreateTodoCommand>, IHandler<UpdateTodoCommand>, IHandler<MarkTodoAsDoneCommand>, IHandler<MarkTodoAsUndoneCommand>
 {
     private readonly ITodoRepository _repository;
     public TodoHandler(ITodoRepository repository)
@@ -44,5 +44,45 @@ public class TodoHandler : Notifiable<Notification>, IHandler<CreateTodoCommand>
 
         //retornar o resultado
         return new GenericCommandResult(true, "Tarefa atualizada com sucesso", todo);
+    }
+
+    public ICommandResult Handle(MarkTodoAsDoneCommand command)
+    {
+        //validar os dados
+        command.Validate();
+        if (command.IsValid == false)
+            return new GenericCommandResult(false, "Por favor, corrija os campos abaixo", command.Notifications);
+
+        //recuperar o todo do banco
+        var todo = _repository.GetById(command.Id, command.User);
+
+        //marcar como feito
+        todo.MarkAsDone();
+
+        //salvar o todo
+        _repository.Update(todo);
+
+        //retornar o resultado
+        return new GenericCommandResult(true, "Tarefa marcada como feita com sucesso", todo);
+    }
+
+    public ICommandResult Handle(MarkTodoAsUndoneCommand command)
+    {
+        //validar os dados
+        command.Validate();
+        if (command.IsValid == false)
+            return new GenericCommandResult(false, "Por favor, corrija os campos abaixo", command.Notifications);
+
+        //recuperar o todo do banco
+        var todo = _repository.GetById(command.Id, command.User);
+
+        //marcar como não feito
+        todo.MarkAsUndone();
+
+        //salvar o todo
+        _repository.Update(todo);
+
+        //retornar o resultado
+        return new GenericCommandResult(true, "Tarefa marcada como não feita com sucesso", todo);
     }
 }
