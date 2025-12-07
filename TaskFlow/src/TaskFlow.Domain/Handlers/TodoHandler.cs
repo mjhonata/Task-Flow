@@ -34,11 +34,14 @@ public class TodoHandler : Notifiable<Notification>, IHandler<CreateTodoCommand>
             return new GenericCommandResult(false, "Por favor, corrija os campos abaixo", command.Notifications);
         //recuperar o todo do banco
         var todo = _repository.GetById(command.Id, command.User);
+
         //alterar o todo
         todo.UpdateTitle(command.Title);
         todo.UpdateDescription(command.Description);
+
         //salvar o todo
         _repository.Update(todo);
+
         //retornar o resultado
         return new GenericCommandResult(true, "Tarefa atualizada com sucesso", todo);
     }
