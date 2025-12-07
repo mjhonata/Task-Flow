@@ -34,5 +34,9 @@ public class TodoItem : Entity
     {
         Title = title;
     }
+    public void UpdateDescription(string description)
+    {
+        Description = description;
+    }
     #endregion
 }

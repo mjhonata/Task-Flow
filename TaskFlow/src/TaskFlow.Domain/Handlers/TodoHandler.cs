@@ -7,7 +7,7 @@ using TaskFlow.Domain.Repositories;
 
 namespace TaskFlow.Domain.Handlers;
 //notifiable é para validar os dados, temos os metodos valid, notifications, etc
-public class TodoHandler : Notifiable<Notification>, IHandler<CreateTodoCommand>
+public class TodoHandler : Notifiable<Notification>, IHandler<CreateTodoCommand>, IHandler<UpdateTodoCommand>
 {
     private readonly ITodoRepository _repository;
     public TodoHandler(ITodoRepository repository)
@@ -24,5 +24,22 @@ public class TodoHandler : Notifiable<Notification>, IHandler<CreateTodoCommand>
 
         _repository.Create(todo);
         return new GenericCommandResult(true, "Tarefa criada com sucesso", todo);
+    }
+
+    public ICommandResult Handle(UpdateTodoCommand command)
+    {
+        //validar os dados
+        command.Validate();
+        if (command.IsValid == false)
+            return new GenericCommandResult(false, "Por favor, corrija os campos abaixo", command.Notifications);
+        //recuperar o todo do banco
+        var todo = _repository.GetById(command.Id, command.User);
+        //alterar o todo
+        todo.UpdateTitle(command.Title);
+        todo.UpdateDescription(command.Description);
+        //salvar o todo
+        _repository.Update(todo);
+        //retornar o resultado
+        return new GenericCommandResult(true, "Tarefa atualizada com sucesso", todo);
     }
 }
