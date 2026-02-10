@@ -1,9 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "FpWHBHjcRLM=",
+=======
+  "dgSpecHash": "kuKkT++jB5g=",
+>>>>>>> Stashed changes
   "success": true,
-  "projectFilePath": "C:\\Users\\Matheus\\OneDrive\\Repos\\Dev\\Task-Flow\\TaskFlow\\src\\TaskFlow.Domain.Api\\TaskFlow.Domain.Api.csproj",
+  "projectFilePath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain.Api\\TaskFlow.Domain.Api.csproj",
   "expectedPackageFiles": [
+<<<<<<< Updated upstream
     "C:\\Users\\Matheus\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.11\\microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0\\microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
@@ -21,6 +26,11 @@
     "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.extensions.options\\9.0.0\\microsoft.extensions.options.9.0.0.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0\\microsoft.extensions.primitives.9.0.0.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+=======
+    "C:\\Users\\mjhonata\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
+    "C:\\Users\\mjhonata\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.11\\microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
+    "C:\\Users\\mjhonata\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+>>>>>>> Stashed changes
   ],
   "logs": []
 }
