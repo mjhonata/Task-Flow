@@ -5,6 +5,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "dgSpecHash": "D951IJ4q2ug=",
   "success": true,
   "projectFilePath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain.Infra\\TaskFlow.Domain.Infra.csproj",
@@ -50,6 +51,13 @@
     "C:\\Users\\mjhonata\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\mjhonata\\.nuget\\packages\\system.text.json\\9.0.0\\system.text.json.9.0.0.nupkg.sha512",
     "C:\\Users\\mjhonata\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+=======
+  "dgSpecHash": "QOEHazzA8s8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mjhonata\\OneDrive - NTT DATA EMEAL\\Documents\\GitHub\\Todo-Item\\TaskFlow\\src\\TaskFlow.Domain.Infra\\TaskFlow.Domain.Infra.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mjhonata\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+>>>>>>> Stashed changes
 =======
   "dgSpecHash": "QOEHazzA8s8=",
   "success": true,
